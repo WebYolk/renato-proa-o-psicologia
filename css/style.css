@@ -1,0 +1,225 @@
+/* --- VARIABLES GLOBALES - RENATO PROAÑO PSICOLOGÍA --- */
+:root {
+    --primary-color: #00a896; /* Verde turquesa pacífico */
+    --primary-hover: #028090; /* Turquesa oscuro */
+    --secondary-color: #05668d; /* Azul profundo elegancia */
+    --accent-light: #e8fccf; /* Verde suave de contraste */
+    --bg-light: #f8fafc;
+    --bg-white: #ffffff;
+    --bg-dark: #0f172a; /* Azul noche clínico */
+    --bg-darker: #020617;
+    --text-dark: #1f2937;
+    --text-light: #4b5563;
+    --btn-text: #ffffff;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+html { scroll-behavior: smooth; }
+body { color: var(--text-dark); line-height: 1.6; background-color: var(--bg-white); }
+
+/* UTILIDADES */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.section { padding: 85px 0; }
+.bg-light { background-color: var(--bg-light); }
+.bg-dark { background-color: var(--bg-dark); }
+.text-white { color: white !important; }
+.text-primary { color: var(--primary-color) !important; }
+.text-center { text-align: center; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.mt-5 { margin-top: 40px; }
+
+.section-title { font-family: 'Montserrat', sans-serif; font-size: 2.3rem; font-weight: 700; margin-bottom: 10px; color: var(--secondary-color); letter-spacing: -0.5px; }
+.section-subtitle { color: var(--text-light); font-size: 1.1rem; margin-bottom: 40px; }
+.title-underline { width: 70px; height: 4px; background-color: var(--primary-color); margin-bottom: 30px; border-radius: 2px; }
+
+/* BOTONES */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 30px; border-radius: 30px; font-weight: 600; text-decoration: none; transition: var(--transition); cursor: pointer; border: 2px solid transparent; font-size: 0.98rem; }
+.btn-primary { background-color: var(--primary-color); color: var(--btn-text); }
+.btn-primary:hover { background-color: var(--primary-hover); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 168, 150, 0.3); }
+.btn-outline { background-color: transparent; border-color: var(--primary-color); color: var(--primary-color); }
+.btn-outline:hover { background-color: var(--primary-color); color: var(--btn-text); transform: translateY(-3px); }
+
+/* NAVEGACIÓN */
+.navbar { position: fixed; top: 0; width: 100%; z-index: 1000; transition: var(--transition); background-color: transparent; padding: 18px 0; }
+.navbar.scrolled { background-color: var(--bg-dark); box-shadow: 0 4px 15px rgba(0,0,0,0.3); padding: 12px 0; }
+.nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* LOGO NAVBAR */
+.logo-container { display: flex; align-items: center; text-decoration: none; }
+.nav-logo { height: 48px; border-radius: 6px; object-fit: contain; background: white; padding: 4px 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+
+.nav-links { list-style: none; display: flex; gap: 22px; align-items: center; }
+.nav-link { color: white; text-decoration: none; font-weight: 500; font-size: 0.92rem; transition: var(--transition); }
+.nav-link:hover { color: var(--primary-color); }
+.hamburger { display: none; color: white; font-size: 1.8rem; cursor: pointer; }
+
+/* HERO SECTION */
+.hero { height: 100vh; background-color: var(--bg-dark); background-image: url('https://res.cloudinary.com/bw6ntjnu/image/upload/v1791944133/psico-logo-portada.jpg'); background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; }
+.hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(5, 102, 141, 0.88) 100%); }
+.hero-content { position: relative; z-index: 1; color: white; max-width: 900px; padding: 0 20px; }
+.hero-content h1 { font-family: 'Montserrat', sans-serif; font-size: 3.4rem; line-height: 1.25; margin-bottom: 20px; font-weight: 700; min-height: 130px; }
+.hero-content p { font-size: 1.2rem; margin-bottom: 35px; opacity: 0.92; max-width: 780px; margin-left: auto; margin-right: auto; }
+.hero-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+
+/* FRANJA DE VALORES */
+.trust-banner { background-color: var(--secondary-color); padding: 35px 0; border-bottom: 4px solid var(--primary-color); }
+.trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; text-align: center; }
+.trust-item i { font-size: 2.2rem; color: var(--primary-color); margin-bottom: 12px; }
+.trust-item h4 { color: white; font-size: 1rem; font-weight: 600; }
+
+/* MISIÓN Y VISIÓN CARDS */
+.about-cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.about-card { background: white; padding: 40px 30px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-left: 5px solid var(--primary-color); transition: var(--transition); }
+.about-card.highlight { border-left-color: var(--secondary-color); }
+.about-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.about-card-icon { width: 60px; height: 60px; border-radius: 50%; background: #e6fffa; color: var(--primary-color); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 20px; }
+.about-card h3 { font-family: 'Montserrat', sans-serif; font-size: 1.4rem; color: var(--secondary-color); margin-bottom: 12px; }
+.about-card p { color: var(--text-light); font-size: 0.98rem; }
+
+/* SECCIÓN DIRECTOR (FOTO VERTICAL INTEGRADAL) */
+.director-layout { display: grid; grid-template-columns: 380px 1fr; gap: 50px; align-items: center; }
+.director-img-container { position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.12); border: 4px solid var(--primary-color); }
+.director-img { width: 100%; height: 480px; object-fit: cover; object-position: top; display: block; transition: var(--transition); }
+.director-img-container:hover .director-img { transform: scale(1.03); }
+
+.director-info .badge-sub { display: inline-block; background: #e6fffa; color: var(--primary-color); font-weight: 700; font-size: 0.85rem; padding: 5px 15px; border-radius: 20px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.5px; }
+.director-info h2 { font-family: 'Montserrat', sans-serif; font-size: 2.2rem; color: var(--secondary-color); margin-bottom: 5px; }
+.director-title { font-size: 1.1rem; color: var(--primary-color); font-weight: 600; margin-bottom: 20px; }
+.director-info p { color: var(--text-light); font-size: 1rem; margin-bottom: 20px; }
+
+.team-quote-box { background: var(--bg-light); border-left: 4px solid var(--primary-color); padding: 20px; border-radius: 0 12px 12px 0; margin-bottom: 25px; position: relative; }
+.team-quote-box i { color: var(--primary-color); font-size: 1.4rem; margin-bottom: 8px; display: block; }
+.team-quote-box p { font-style: italic; color: var(--text-dark); margin: 0; font-size: 0.95rem; }
+
+.director-tags { display: flex; flex-wrap: wrap; gap: 15px; }
+.director-tags span { font-size: 0.9rem; font-weight: 600; color: var(--secondary-color); display: inline-flex; align-items: center; gap: 6px; }
+.director-tags i { color: var(--primary-color); }
+
+/* ESPECIALIDADES / SERVICIOS */
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+.service-box { background: white; padding: 32px 25px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); transition: var(--transition); border-bottom: 4px solid var(--primary-color); }
+.service-box:hover { transform: translateY(-6px); box-shadow: 0 12px 25px rgba(0,0,0,0.08); border-bottom-color: var(--secondary-color); }
+.service-icon-wrap { width: 60px; height: 60px; border-radius: 50%; background: #e6fffa; color: var(--primary-color); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 20px; transition: var(--transition); }
+.service-box:hover .service-icon-wrap { background: var(--primary-color); color: white; }
+.service-box h3 { font-family: 'Montserrat', sans-serif; font-size: 1.2rem; color: var(--secondary-color); margin-bottom: 10px; }
+.service-box p { font-size: 0.92rem; color: var(--text-light); }
+
+/* TARIFAS & PRICING */
+.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+.pricing-card { background: white; padding: 40px 30px; border-radius: 20px; border: 1px solid #e2e8f0; text-align: center; position: relative; box-shadow: 0 6px 20px rgba(0,0,0,0.05); transition: var(--transition); display: flex; flex-direction: column; justify-content: space-between; }
+.pricing-card.popular { border: 2px solid var(--primary-color); transform: scale(1.03); }
+.pricing-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+.pricing-badge { position: absolute; top: 15px; right: 20px; background: #e2e8f0; color: var(--text-dark); font-size: 0.8rem; font-weight: 600; padding: 4px 12px; border-radius: 20px; }
+.pricing-badge-popular { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: white; font-size: 0.82rem; font-weight: 700; padding: 4px 18px; border-radius: 20px; }
+.pricing-card h3 { font-family: 'Montserrat', sans-serif; font-size: 1.3rem; color: var(--secondary-color); margin-top: 10px; margin-bottom: 15px; }
+.price-val { font-size: 2.8rem; font-weight: 800; color: var(--primary-color); margin-bottom: 15px; }
+.price-sub { font-size: 0.9rem; font-weight: 400; color: var(--text-light); }
+.pricing-desc { font-size: 0.93rem; color: var(--text-light); margin-bottom: 25px; }
+.btn-pricing { background: var(--secondary-color); color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: var(--transition); }
+.btn-pricing:hover { background: var(--primary-color); }
+.btn-pricing-highlight { background: var(--primary-color); color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: var(--transition); box-shadow: 0 6px 15px rgba(0, 168, 150, 0.3); }
+.btn-pricing-highlight:hover { background: var(--primary-hover); }
+
+/* PACKS DESCUENTO */
+.packs-container { background: #e6fffa; padding: 35px; border-radius: 18px; border: 1px dashed var(--primary-color); }
+.packs-title { text-align: center; font-family: 'Montserrat', sans-serif; color: var(--secondary-color); margin-bottom: 25px; font-size: 1.4rem; }
+.packs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; text-align: center; }
+.pack-item { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
+.pack-item h4 { font-family: 'Montserrat', sans-serif; color: var(--secondary-color); margin-bottom: 5px; }
+.pack-item p { font-size: 0.88rem; color: var(--text-light); margin-bottom: 10px; }
+.pack-price { font-size: 1.15rem; color: var(--primary-color); }
+.old-price { text-decoration: line-through; color: #9ca3af; margin-right: 8px; font-size: 0.95rem; }
+
+/* CONTACTO Y MAPA (CORREGIDO Y ALINEADO) */
+.contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: stretch; }
+.contact-info-column { display: flex; flex-direction: column; gap: 20px; justify-content: space-between; }
+
+.contact-card-link, .contact-card-address {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 22px 25px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-card-link:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 168, 150, 0.2);
+}
+
+.contact-icon-wrap {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.contact-card-link:hover .contact-icon-wrap {
+    background: white;
+    color: var(--primary-color);
+}
+
+.contact-card-link h3, .contact-card-address h3, .social-links-card h3 { 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.15rem; 
+    margin-bottom: 4px; 
+}
+
+.contact-detail { font-size: 0.95rem; opacity: 0.9; line-height: 1.5; }
+
+.social-links-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 22px 25px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.social-btns { display: flex; gap: 15px; justify-content: center; margin-top: 12px; }
+.social-btn { background: rgba(255, 255, 255, 0.1); color: white; padding: 8px 20px; border-radius: 20px; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: var(--transition); display: inline-flex; align-items: center; gap: 8px; }
+.social-btn:hover { background: var(--primary-color); transform: translateY(-2px); }
+
+.map-container { width: 100%; min-height: 100%; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 2px solid var(--primary-color); }
+
+/* FOOTER Y WHATSAPP FLOTANTE */
+.footer { text-align: center; padding: 25px; background: var(--bg-darker); color: #94a3b8; font-size: 0.9rem; }
+.whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; z-index: 999; text-decoration: none; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); transition: var(--transition); }
+.whatsapp-float:hover { transform: scale(1.1); }
+
+/* ANIMACIONES FADE-IN */
+.fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* RESPONSIVE MÓVIL */
+@media (max-width: 992px) {
+    .director-layout { grid-template-columns: 1fr; }
+    .director-img { height: 380px; }
+    .contact-layout { grid-template-columns: 1fr; }
+    .map-container { min-height: 350px; }
+    .hero-content h1 { font-size: 2.5rem; min-height: 90px; }
+    .pricing-card.popular { transform: scale(1); }
+}
+@media (max-width: 768px) {
+    .hamburger { display: block; }
+    .nav-links { position: absolute; top: 100%; left: -100%; width: 100%; background: var(--bg-dark); flex-direction: column; text-align: center; padding: 20px 0; gap: 20px; transition: var(--transition); box-shadow: 0 10px 15px rgba(0,0,0,0.3); }
+    .nav-links.active { left: 0; }
+    .navbar { background: var(--bg-dark); padding: 12px 0; }
+    .hero-content h1 { font-size: 1.9rem; }
+    .hero-btns { flex-direction: column; }
+    .btn { width: 100%; }
+}
