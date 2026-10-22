@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renato Proaño Psicología | Centro de Salud Mental en Quito</title>
     
-    <!-- Google Fonts: Montserrat & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome para íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,19 +17,19 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="logo-container">
-                <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791944133/psico-logo-portada.jpg" alt="Logo Renato Proaño Psicología" class="nav-logo">
+                <img src="img/logo1.png" alt="Logo Renato Proaño Psicología" class="nav-logo">
             </a>
             
             <ul class="nav-links" id="nav-links">
                 <li><a href="#inicio" class="nav-link">Inicio</a></li>
                 <li><a href="#nosotros" class="nav-link">El Centro</a></li>
-                <li><a href="#director" class="nav-link">Dirección Clínica</a></li>
+                <li><a href="#equipo" class="nav-link">Nuestro Equipo</a></li>
                 <li><a href="#servicios" class="nav-link">Especialidades</a></li>
                 <li><a href="#tarifas" class="nav-link">Tarifas & Packs</a></li>
                 <li><a href="#contacto" class="nav-link">Ubicación & Contacto</a></li>
             </ul>
 
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger" aria-label="Abrir menú">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
@@ -42,13 +40,13 @@
         <div class="hero-overlay"></div>
         <div class="hero-content fade-in">
             <h1>Descubre el camino hacia tu <br>
-                <span class="typewrite text-primary" data-period="2000" data-type='[ "bienestar emocional.", "tranquilidad y paz.", "salud mental integral.", "autoconocimiento." ]'>
+                <span class="typewrite text-primary" data-period="2000" data-type='[ "bienestar emocional", "tranquilidad y paz", "salud mental integral", "autoconocimiento" ]'>
                     <span class="wrap"></span>
                 </span>
             </h1>
             <p>Servicios de salud mental accesibles, basados en evidencia científica y con un acompañamiento terapéutico humano, empático y libre de juicios en Quito.</p>
             <div class="hero-btns">
-                <a href="https://wa.me/593997339220?text=Hola,%20deseo%20agendar%20una%20consulta%20psicol%C3%B3gica." target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Agenda tu Consulta</a>
+                <a href="https://wa.me/593997339220?text=Hola,%20deseo%20agendar%20una%20consulta%20psicol%C3%B3gica." target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Agenda tu Consulta</a>
                 <a href="#tarifas" class="btn btn-outline"><i class="fas fa-calendar-alt"></i> Ver Modalidades & Tarifas</a>
             </div>
         </div>
@@ -101,39 +99,88 @@
         </div>
     </section>
 
-    <!-- SECCIÓN DIRECTOR & EQUIPO -->
-    <section id="director" class="section">
+    <!-- SECCIÓN EQUIPO -->
+    <section id="equipo" class="section">
         <div class="container">
-            <div class="director-layout fade-in">
-                
-                <div class="director-img-container">
-                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791943975/psico-secundaria.jpg" alt="Psic. Renato Proaño M.Sc." class="director-img">
-                </div>
+            <div class="text-center fade-in">
+                <h2 class="section-title">Nuestro Equipo Profesional</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="section-subtitle">Especialistas comprometidos con tu salud mental y bienestar emocional.</p>
+            </div>
 
+            <!-- DIRECTOR CLÍNICO -->
+            <div class="director-layout fade-in mb-5">
+                <div class="director-img-container">
+                    <img src="img/renato.jpg" alt="Psic. Renato Proaño M.Sc." class="director-img">
+                </div>
                 <div class="director-info">
                     <span class="badge-sub">Dirección Clínica</span>
                     <h2>Psic. Renato Proaño M.Sc.</h2>
                     <h4 class="director-title">Psicólogo Clínico & Magíster en Psicología Clínica</h4>
-                    
-                    <p>Como director del centro, el Psic. Renato Proaño guía un enfoque terapéutico basado estrictamente en la práctica clínica y la evidencia científica, asegurando que cada paciente reciba un trato digno, confidencial y adaptado a sus necesidades reales.</p>
-                    
+                    <p>Como director del centro, el Psic. Renato Proaño guía un enfoque terapéutico basado strictly en la práctica clínica y la evidencia científica, asegurando que cada paciente reciba un trato digno, confidencial y adaptado a sus necesidades reales.</p>
                     <div class="team-quote-box">
                         <i class="fas fa-quote-left"></i>
                         <p>Junto a un equipo de psicólogos capacitados, brindamos acompañamiento terapéutico integral para jóvenes y adultos, promoviendo espacios seguros para la recuperación del bienestar emocional.</p>
                     </div>
-
                     <div class="director-tags">
                         <span><i class="fas fa-check-circle"></i> Terapia Presencial & Virtual</span>
                         <span><i class="fas fa-check-circle"></i> Evaluación Clínica</span>
                         <span><i class="fas fa-check-circle"></i> Co-terapia Supervisada</span>
                     </div>
                 </div>
-
             </div>
+
+            <!-- OTROS PROFESIONALES -->
+            <div class="team-grid fade-in mt-5">
+                <!-- Carlos Alvarado -->
+                <div class="team-card">
+                    <div class="team-card-img-wrap">
+                        <img src="img/carlos.jpeg" alt="Psic. Carlos Alvarado" class="team-card-img">
+                    </div>
+                    <div class="team-card-body">
+                        <span class="badge-sub">Psicólogo Clínico</span>
+                        <h3>Psic. Carlos Alvarado</h3>
+                        <p class="team-card-sub">Psicoterapia presencial y online para adolescentes y adultos</p>
+                        <p class="team-card-text">Ofrece acompañamiento psicológico desde un enfoque humanista, comprendiendo a cada persona desde su historia, emociones, relaciones y contexto. A través de la escucha activa y la empatía, promueve el autoconocimiento y el desarrollo de recursos personales.</p>
+                        <div class="team-areas">
+                            <strong>Áreas de atención:</strong>
+                            <ul>
+                                <li>Depresión y trastornos del estado de ánimo</li>
+                                <li>Ansiedad, estrés y crisis vitales</li>
+                                <li>Duelo, pérdidas y conducta alimentaria</li>
+                                <li>Autoestima y relaciones interpersonales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Felipe Del Castillo -->
+                <div class="team-card">
+                    <div class="team-card-img-wrap">
+                        <img src="img/bata.jpeg" alt="Psic. Felipe Del Castillo" class="team-card-img">
+                    </div>
+                    <div class="team-card-body">
+                        <span class="badge-sub">Psicólogo Clínico</span>
+                        <h3>Psic. Felipe Del Castillo</h3>
+                        <p class="team-card-sub">Atención psicológica supervisada para adolescentes y adultos</p>
+                        <p class="team-card-text">Su enfoque integra la Terapia Cognitivo-Conductual (TCC) con una escucha empática y un espacio seguro de acompañamiento, orientado a comprender la experiencia individual y promover el bienestar emocional mediante intervenciones basadas en evidencia.</p>
+                        <div class="team-areas">
+                            <strong>Áreas de atención:</strong>
+                            <ul>
+                                <li>Ansiedad y depresión</li>
+                                <li>Autoestima y desarrollo personal</li>
+                                <li>Dificultades interpersonales</li>
+                                <li>Acompañamiento terapéutico integral</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- SECCIÓN ESPECIALIDADES DE ATENCIÓN -->
+    <!-- SECCIÓN ESPECIALIDADES -->
     <section id="servicios" class="section bg-light">
         <div class="container">
             <div class="text-center fade-in">
@@ -175,14 +222,14 @@
 
                 <div class="service-box">
                     <div class="service-icon-wrap"><i class="fas fa-compass"></i></div>
-                    <h3>Autoconocimiento</h3>
-                    <p>Desarrollo de habilidades de afrontamiento, autoestima y fortalecimiento de metas de vida.</p>
+                    <h3>Autoconocimiento & Orientación Vocacional</h3>
+                    <p>Desarrollo de habilidades de afrontamiento, autoestima, fortalecimiento de metas de vida y guía en elección de carrera profesional.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN MODALIDADES Y TARIFAS -->
+    <!-- SECCIÓN TARIFAS -->
     <section id="tarifas" class="section">
         <div class="container">
             <div class="text-center fade-in">
@@ -192,35 +239,35 @@
             </div>
 
             <div class="pricing-grid fade-in">
-                <!-- Sesión Presencial -->
+                <!-- Presencial -->
                 <div class="pricing-card">
                     <div class="pricing-badge">Consultorio Quito</div>
                     <h3>Consulta Presencial</h3>
                     <div class="price-val">$40 <span class="price-sub">/ sesión</span></div>
                     <p class="pricing-desc">Atención individual en nuestro espacio terapéutico diseñado para tu máxima tranquilidad.</p>
-                    <a href="https://wa.me/593997339220?text=Hola,%20deseo%20agendar%20una%20Consulta%20Presencial%20($40)." target="_blank" class="btn btn-pricing">Agendar Presencial</a>
+                    <a href="https://wa.me/593997339220?text=Hola,%20deseo%20agendar%20una%20Consulta%20Presencial%20($40)." target="_blank" rel="noopener noreferrer" class="btn btn-pricing">Agendar Presencial</a>
                 </div>
 
-                <!-- Sesión Virtual -->
+                <!-- Virtual -->
                 <div class="pricing-card popular">
                     <div class="pricing-badge-popular">Modalidad Virtual</div>
-                    <h3>Consulta Virtual</h3>
+                    <h3>Consulta Virtual <br><small class="pricing-subtext">(desde donde estés)</small></h3>
                     <div class="price-val">$30 <span class="price-sub">/ sesión</span></div>
                     <p class="pricing-desc">Atención en línea con la misma efectividad clínica, desde cualquier lugar con total privacidad.</p>
-                    <a href="https://wa.me/593997339220?text=Hola,%20deseo%20agendar%20una%20Consulta%20Virtual%20($30)." target="_blank" class="btn btn-pricing-highlight">Agendar Virtual</a>
+                    <a href="https://wa.me/593997339220?text=Hola,%20deseo%20agendar%20una%20Consulta%20Virtual%20($30)." target="_blank" rel="noopener noreferrer" class="btn btn-pricing-highlight">Agendar Virtual</a>
                 </div>
 
-                <!-- Tarifa Diferenciada (Co-terapia) -->
+                <!-- Co-terapia -->
                 <div class="pricing-card">
                     <div class="pricing-badge">Cupos Limitados</div>
                     <h3>Tarifa Diferenciada</h3>
                     <div class="price-val">$15 <span class="price-sub">/ sesión</span></div>
                     <p class="pricing-desc">Sistema de co-terapia por un profesional en formación de últimos semestres supervisado por el centro.</p>
-                    <a href="https://wa.me/593997339220?text=Hola,%20quisiera%20consultar%20por%20un%20cupo%20en%20Tarifa%20Diferenciada%20($15)." target="_blank" class="btn btn-pricing">Solicitar Cupo</a>
+                    <a href="https://wa.me/593997339220?text=Hola,%20quisiera%20consultar%20por%20un%20cupo%20en%20Tarifa%20Diferenciada%20($15)." target="_blank" rel="noopener noreferrer" class="btn btn-pricing">Solicitar Cupo</a>
                 </div>
             </div>
 
-            <!-- PACKS DE SESIONES -->
+            <!-- PACKS -->
             <div class="packs-container mt-5 fade-in">
                 <h3 class="packs-title"><i class="fas fa-tags"></i> Packs de Sesiones con Descuento Especial</h3>
                 <div class="packs-grid">
@@ -244,7 +291,7 @@
         </div>
     </section>
 
-    <!-- CONTACTO Y MAPA INTERACTIVO -->
+    <!-- CONTACTO -->
     <section id="contacto" class="section bg-dark text-white">
         <div class="container fade-in">
             <div class="text-center mb-5" style="margin-bottom: 45px;">
@@ -254,10 +301,8 @@
             </div>
 
             <div class="contact-layout">
-                <!-- Columna Izquierda: Información Estructurada -->
                 <div class="contact-info-column">
-                    
-                    <a href="https://wa.me/593997339220" target="_blank" class="contact-card-link">
+                    <a href="https://wa.me/593997339220" target="_blank" rel="noopener noreferrer" class="contact-card-link">
                         <div class="contact-icon-wrap"><i class="fab fa-whatsapp"></i></div>
                         <div>
                             <h3>WhatsApp Directo</h3>
@@ -276,14 +321,12 @@
                     <div class="social-links-card">
                         <h3>Síguenos en Redes Sociales</h3>
                         <div class="social-btns">
-                            <a href="https://www.facebook.com/share/1Fc2RPwn6h/" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
-                            <a href="https://www.instagram.com/psic.renato.proano/" target="_blank" class="social-btn"><i class="fab fa-instagram"></i> Instagram</a>
+                            <a href="https://www.facebook.com/share/1Fc2RPwn6h/" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            <a href="https://www.instagram.com/psic.renato.proano/" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-instagram"></i> Instagram</a>
                         </div>
                     </div>
-
                 </div>
 
-                <!-- Columna Derecha: Mapa Interactivo -->
                 <div class="map-container">
                     <iframe src="https://maps.google.com/maps?q=-0.193277,-78.4913433&hl=es&z=17&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -297,11 +340,10 @@
     </footer>
 
     <!-- BOTÓN WHATSAPP FLOTANTE -->
-    <a href="https://wa.me/593997339220" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/593997339220" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- SCRIPT JS -->
     <script src="js/script.js"></script>
 </body>
 </html>
